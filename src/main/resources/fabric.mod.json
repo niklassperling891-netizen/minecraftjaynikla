@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "mob_breeding_indicator",
+  "version": "${version}",
+  "name": "Mob Breeding Indicator",
+  "description": "Shows breeding readiness with colored mob outlines and a toggle key.",
+  "authors": ["ChatGPT"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["de.mobbreedingindicator.MobBreedingIndicatorClient"]
+  },
+  "mixins": [
+    "mob_breeding_indicator.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
